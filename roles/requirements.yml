@@ -1,6 +1,6 @@
 ---
 #from galaxy
-#- name: redhat_sap.sap_rhsm
+- name: redhat_sap.sap_rhsm
 - name: linux-system-roles.timesync
 #- name: linux-system-roles.storage
 - name: redhat_sap.sap_hostagent
