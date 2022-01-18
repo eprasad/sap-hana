@@ -20,21 +20,21 @@
     sap_hana_deployment_hana_db_system_password: "Mysecretpassword1"
     sap_hana_deployment_ase_user_password: "Mysecretpassword1"
     sap_hana_deployment_apply_license: false
-  pre_tasks: 
-    name: create directory for SAPCAR 
-    file:
-      path: /software/SAPCAR
-      state: directory
+  pre_tasks:
+    - name: create directory for SAPCAR
+      file:
+        path: /software/SAPCAR
+        state: directory
 
-    name: Download the SAPCAR
-    get_url:
-      url: "{{ sapcarurl }}"
-      dest: /software/SAPCAR/
-    name: Download IMDB Server file
-    get_url:
-      url: "{{ imdbfileurl }}"
-      dest: /software/ 
+    - name: Download the SAPCAR
+      get_url:
+        url: "{{ sapcarurl }}"
+        dest: /software/SAPCAR/
 
+    - name: Download IMDB Server file
+      get_url:
+        url: "{{ imdbfileurl }}"
+        dest: /software/
   roles:
     - redhat_sap.sap_hana_deployment
-
+~                                                     
