@@ -1,5 +1,12 @@
 ---
 - hosts: hanas
+  tasks:
+    - name: Register and subscribe to a pool for sap installation
+      community.general.redhat_subscription:
+        state: present
+        username: joe_user
+        password: somepass
+        pool_ids: poolid
   roles:
     - redhat_sap.sap_rhsm
 
