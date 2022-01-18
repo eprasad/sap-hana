@@ -1,7 +1,5 @@
 ---
-
 - hosts: hanas
-
   vars:
     sapcarurl: http://65.108.157.137:8000/sap/SAPCAR_1324-80000935.EXE
     imdbfileurl: http://65.108.157.137:8000/sap/IMDB_SERVER20_046_0-80002031.SAR
@@ -22,7 +20,6 @@
     sap_hana_deployment_hana_db_system_password: "Mysecretpassword1"
     sap_hana_deployment_ase_user_password: "Mysecretpassword1"
     sap_hana_deployment_apply_license: false
-
   pre_tasks: 
     name: create directory for SAPCAR 
     file:
