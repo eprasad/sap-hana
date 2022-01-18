@@ -23,7 +23,7 @@
     sap_hana_deployment_ase_user_password: "Mysecretpassword1"
     sap_hana_deployment_apply_license: false
 
-  pre-tasks: 
+  pre_tasks: 
     name: create directory for SAPCAR 
     file:
       path: /software/SAPCAR
