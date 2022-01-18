@@ -1,11 +1,11 @@
-# from Galaxy
-- src: redhat_sap.sap_rhsm
-- src: linux-system-roles.timesync
-- src: linux-system-roles.storage
-#- src: redhat_sap.sap_hostagent
-#- src: redhat_sap.sap_hana_deployment
+---
+#from galaxy
+- name: redhat_sap.sap_rhsm
+- name: linux-system-roles.timesync
+- name: linux-system-roles.storage
+- name: redhat_sap.sap_hostagent
+- name: redhat_sap.sap_hana_deployment
 
 #from github
-#- src: https://github.com/linux-system-roles/sap-preconfigure
-#- src: https://github.com/linux-system-roles/sap-hana-preconfigure
-
+- src: https://github.com/linux-system-roles/sap-preconfigure
+- src: https://github.com/linux-system-roles/sap-hana-preconfigure
