@@ -9,4 +9,6 @@
 #from github
 - src: https://github.com/linux-system-roles/sap-preconfigure
 - src: https://github.com/linux-system-roles/sap-hana-preconfigure
-- src: https://github.com/eprasad/storage
+- name: rhel-system-roles.storage
+  src: https://github.com/eprasad/storage
+
