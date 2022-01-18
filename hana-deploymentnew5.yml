@@ -31,7 +31,7 @@
 
     name: Download the SAPCAR
     get_url:
-      url: "{{ "sapcarurl" }}
+      url: "{{ sapcarurl }}"
       dest: /software/SAPCAR/
     name: Download IMDB Server file
     get_url:
