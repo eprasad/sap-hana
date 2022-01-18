@@ -1,6 +1,6 @@
 ---
 - hosts: hanas
-  tasks:
+  pre_tasks:
     - name: Register and subscribe to a pool for sap installation
       redhat_subscription:
         state: present
