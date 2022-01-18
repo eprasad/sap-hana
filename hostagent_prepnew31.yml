@@ -9,8 +9,8 @@
   tasks:
     - name: create directory to store SAP artifacts
       file:
-        name: "{{ path }}"
-        type: directory
+        path: "{{ path }}"
+        state: directory
     - name: Download the SAR
       get_url: 
         url: "{{ sar_url }}"
