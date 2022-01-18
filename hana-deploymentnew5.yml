@@ -3,6 +3,8 @@
 - hosts: hanas
 
   vars:
+    sapcarurl: http://65.108.157.137:8000/sap/SAPCAR_1324-80000935.EXE
+    imdbfileurl: http://65.108.157.137:8000/sap/IMDB_SERVER20_046_0-80002031.SAR
     sap_hana_deployment_bundle_path: /software
     sap_hana_deployment_bundle_sar_file_name: IMDB_SERVER20_046_0-80002031.SAR
     sap_hana_deployment_sapcar_path: /software/SAPCAR
@@ -21,6 +23,18 @@
     sap_hana_deployment_ase_user_password: "Mysecretpassword1"
     sap_hana_deployment_apply_license: false
 
+  pre-tasks: 
+    name: create directory for SAPCAR 
+    file:
+      path: /software/SAPCAR
+      state: directory
+    name: Download the SAPCAR
+    get_url:
+      url: "{{ "sapcarurl" }}
+      dest: /software/SAPCAR/
+    name: Download IMDB Server file
+      url: "{{ imdbfileurl }}"
+      dest: /software/ 
 
   roles:
     - redhat_sap.sap_hana_deployment
