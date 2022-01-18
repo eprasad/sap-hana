@@ -36,5 +36,4 @@
         url: "{{ imdbfileurl }}"
         dest: /software/
   roles:
-    - redhat_sap.sap_hana_deployment   
-                                                  
+    - redhat_sap.sap_hana_deployment
