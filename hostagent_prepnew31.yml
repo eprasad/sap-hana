@@ -12,7 +12,14 @@
     #sap_hostagent_sapcar_file_name: "SAPCAR_1311-80000935.EXE"
     sap_hostagent_sapcar_file_name: "SAPCAR_1324-80000935.EXE"
     sap_hostagent_clean_tmp_directory: true
-
+  pre-tasks:
+    - name: create directory to store SAP artifacts
+      file:
+        name: "{{ sap_hostagent_sar_local_path }}"
+        type: directory
+    - name: Download the SAR
+    - name: Download the SAPCAR
+      
   roles:
     - redhat_sap.sap_hostagent
 
