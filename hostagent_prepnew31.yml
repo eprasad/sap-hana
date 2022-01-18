@@ -1,0 +1,19 @@
+---
+- name: Host Agent Installation
+  hosts: hanas
+  become: yes
+
+  vars:
+
+       sap_hostagent_installation_type: "sar"
+       sap_hostagent_sar_local_path: "/home/jitendra"
+       sap_hostagent_sar_file_name: "SAPHOSTAGENT164_164-20005731.SAR"
+       #sap_hostagent_sar_file_name: "SAPHOSTAGENT02_2-10009320.SAR"
+       sap_hostagent_sapcar_local_path: "/home/jitendra"
+       #sap_hostagent_sapcar_file_name: "SAPCAR_1311-80000935.EXE"
+       sap_hostagent_sapcar_file_name: "SAPCAR_1324-80000935.EXE"
+       sap_hostagent_clean_tmp_directory: true
+
+  roles:
+    - redhat_sap.sap_hostagent
+
