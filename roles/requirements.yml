@@ -2,8 +2,8 @@
 - src: redhat_sap.sap_rhsm
 - src: linux-system-roles.timesync
 - src: linux-system-roles.storage
-- src: redhat_sap.sap_hostagent
-- src: redhat_sap.sap_hana_deployment
+#- src: redhat_sap.sap_hostagent
+#- src: redhat_sap.sap_hana_deployment
 
 #from github
 #- src: https://github.com/linux-system-roles/sap-preconfigure
