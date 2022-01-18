@@ -1,4 +1,4 @@
 ---
 roles:
   # Install a role from Ansible Galaxy.
-  - name: linux-system-roles.timesync
+  - name: linux-system-roles.storage
