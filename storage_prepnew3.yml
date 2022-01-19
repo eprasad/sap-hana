@@ -5,8 +5,8 @@
   vars:
     storage_safe_mode: false
     storage_pools:
-      - name: sap1
-        disks: sdc
+      - name: sap
+        disks: sdb
         volumes:
           - name: data
             size: "50 GiB"
