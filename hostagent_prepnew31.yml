@@ -3,8 +3,8 @@
   hosts: localhost
   become: yes
   vars:
-    sar_url: "http://65.108.157.137:8000/sap/SAPHOSTAGENT02_2-10009320.SAR"
-    sarcar_url: "http://65.108.157.137:8000/sap/SAPCAR_1324-80000935.EXE"
+    sar_url: "http://192.168.40.119:8000/SAPHOSTAGENT02_2-10009320.SAR"
+    sarcar_url: "http://192.168.40.119:8000/SAPCAR_1324-80000935.EXE"
     path: "/opt/sap"
   tasks:
     - name: create directory to store SAP artifacts
@@ -27,8 +27,8 @@
   become: yes
 
   vars:
-    sarcar_url: "http://65.108.157.137:8000/sap/SAPHOSTAGENT02_2-10009320.SAR"
-    sar_url: "http://65.108.157.137:8000/sap/SAPCAR_1324-80000935.EXE"
+    sarcar_url: "http://192.168.40.119:8000/SAPHOSTAGENT02_2-10009320.SAR"
+    sar_url: "http://192.168.40.119:8000/SAPCAR_1324-80000935.EXE"
     sap_hostagent_installation_type: "sar"
     sap_hostagent_sar_local_path: "/opt/sap"
     sap_hostagent_sar_file_name: "SAPHOSTAGENT02_2-10009320.SAR"
