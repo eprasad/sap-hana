@@ -1,8 +1,8 @@
 ---
 - hosts: hanas
   vars:
-    sapcarurl: http://65.108.157.137:8000/sap/SAPCAR_1324-80000935.EXE
-    imdbfileurl: http://65.108.157.137:8000/sap/IMDB_SERVER20_046_0-80002031.SAR
+    sapcarurl: http://192.168.40.119:8000/SAPCAR_1324-80000935.EXE
+    imdbfileurl: http://192.168.40.119:8000/IMDB_SERVER20_046_0-80002031.SAR
     sap_hana_deployment_bundle_path: /software
     sap_hana_deployment_bundle_sar_file_name: IMDB_SERVER20_046_0-80002031.SAR
     sap_hana_deployment_sapcar_path: /software/SAPCAR
