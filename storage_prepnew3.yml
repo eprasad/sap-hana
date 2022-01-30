@@ -6,25 +6,25 @@
     storage_safe_mode: false
     storage_pools:
       - name: sap
-        disks: sdb
+        disks: pmem0
         volumes:
           - name: data
-            size: "50 GiB"
+            size: "200 GiB"
             mount_point: "/hana/data"
             fs_type: xfs
             state: present
           - name: log
-            size: "20 GiB"
+            size: "200 GiB"
             mount_point: "/hana/log"
             fs_type: xfs
             state: present
           - name: shared
-            size: " 50 GiB"
+            size: " 200 GiB"
             mount_point: "/hana/shared"
             fs_type: xfs
             state: present
           - name: sap
-            size: "50 GiB"
+            size: "200 GiB"
             mount_point: "/usr/sap"
             state: present
 
